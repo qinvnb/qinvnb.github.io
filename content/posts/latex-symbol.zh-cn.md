@@ -1,14 +1,13 @@
 ---
-# 必填项
 title: "LaTeX 常用符号大全"
 date: 2025-06-13
-# 可选项
 description: "LaTeX 常用符号大全，可用于查询。"
 draft: false  # 是否为草稿
 categories: ["工具", "LaTeX"]
 tags: ["LaTeX"]
-slug: "latex-symbol"  # 自定义 URL
-comments: true
+slug: "latex-symbol"  #自定义 URL
+katex: true
+mermaid: true
 ---
 ## LaTeX 常用符号大全
 
