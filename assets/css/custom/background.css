@@ -1,5 +1,104 @@
 /* 背景样式优化 */
 
+/* 解决长链接溢出问题 */
+article.prose a {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* 确保代码块中的长文本也能换行 */
+article.prose pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* 解决表格溢出问题，添加横向滚动 */
+/* 为表格创建专门的容器，解决边框溢出和右侧空白问题 */
+article.prose {
+  overflow-x: visible;
+}
+
+/* 强制为表格创建包装容器 */
+article.prose :is(table) {
+  /* 创建表格容器 */
+  display: block;
+  overflow-x: auto;
+  /* 确保容器不会超出父元素 */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* 重置表格本身的样式，解决右侧空白问题 */
+article.prose table {
+  /* 恢复表格的自然特性 */
+  display: table;
+  /* 强制表格宽度为100%，消除右侧空白 */
+  width: 100% !important;
+  /* 移除可能导致问题的最小宽度 */
+  min-width: 0 !important;
+  /* 确保表格使用正确的盒模型 */
+  box-sizing: border-box !important;
+  /* 移除主题可能添加的额外边距 */
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* 确保表格的所有子元素都使用正确的盒模型 */
+article.prose table > *, 
+article.prose table > * > *, 
+article.prose table > * > * > * {
+  box-sizing: border-box !important;
+}
+
+/* 重置thead、tbody、tfoot */
+article.prose thead, 
+article.prose tbody, 
+article.prose tfoot {
+  display: table-row-group;
+  width: auto !important;
+}
+
+/* 重置表格行 */
+article.prose tr {
+  display: table-row;
+  width: auto !important;
+}
+
+/* 重置表格单元格 */
+article.prose th, 
+article.prose td {
+  display: table-cell;
+  /* 确保内容正确换行 */
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  /* 移除主题可能添加的额外内边距 */
+  padding: 0.5rem !important;
+  /* 确保单元格宽度自适应 */
+  width: auto !important;
+  min-width: 0 !important;
+}
+
+/* 解决表格边框问题 */
+article.prose table, 
+article.prose th, 
+article.prose td {
+  /* 确保边框包含在宽度内 */
+  border-collapse: collapse !important;
+  border-spacing: 0 !important;
+}
+
+/* 添加专门的表格容器类 */
+.article-table-container {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 1rem 0;
+  padding: 0;
+}
+
 :root {
   --bg-blur: 15px;
   --bg-saturation: 1.8;
@@ -70,27 +169,4 @@ article.prose,
 
 @media (max-width: 480px) {
   :root { --bg-article-padding: 1.5rem; }
-}
-
-/* 表格横向滚动支持 */
-article, .prose, .content {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-table {
-  width: 100%;
-  max-width: 100%;
-  border-collapse: collapse;
-  margin: 1rem 0;
-}
-
-table th, table td {
-  padding: 0.5rem;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  white-space: nowrap;
-}
-
-.dark table th, .dark table td {
-  border-color: rgba(255, 255, 255, 0.1);
 }
