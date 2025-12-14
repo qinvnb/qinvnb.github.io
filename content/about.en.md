@@ -19,18 +19,4 @@ links:
 
 ---
 
-## About
-
-Hugo Narrow is a modern, clean, and minimal Hugo theme built with Tailwind CSS 4.0. It's designed as a blog theme with extensive customization options including multiple color schemes, dark mode support, and responsive design.
-
-## Technology Stack
-
-- Hugo Extended
-- Tailwind CSS 4.0
-- @tailwindcss/typography
-- Glightbox
-- fjGallery
-- Macy.js
-- gumshoe
-- ...
-
+![The Sea of Flowers in Dream](/images/about.png "Author: Merck Alkmooce")

@@ -3,7 +3,7 @@ title: "Home"
 author:
   name: "Merck Alkmooce"
   title: "Keeping records is always necessary......"
-  description: ""
+  description: "What I revere is the endless suffering in this world.What I revere is the original intention I have never abandoned."
   avatar: "/images/avatar.png"
   social:
     - name: "GitHub"

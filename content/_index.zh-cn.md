@@ -3,7 +3,7 @@ title: "首页"
 author:
   name: "芩叶昔风"
   title: "记录总是必要的……"
-  description: ""
+  description: "所敬有此间无量苦痛，所敬有余之未易初心。"
   avatar: "/images/avatar.png"
   social:
     - name: "GitHub"

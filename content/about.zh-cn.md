@@ -1,8 +1,10 @@
 ---
 title: "关于"
 layout: "about"
-summary: "一些关于个人网站杂谈"
+summary: "一些关于个人网站的杂谈"
 date: 2024-01-01T00:00:00+08:00
+lightbox:
+  enabled: true
 links:
   - name: "Hugo 文档"
     url: "https://gohugo.io/"
@@ -20,6 +22,7 @@ links:
     description: "全球最大的代码托管平台"
 ---
 
+![梦中的花海](/images/about.png "作者：芩叶昔风")
 ## 妄言
 澒濛之时，夐古之日，彼人不懅，俜然屹立。  
 綦云叆叇，玈林繁棽。  

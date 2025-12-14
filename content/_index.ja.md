@@ -3,7 +3,7 @@ title: "ホーム"
 author:
   name: "メルク・アルクモース"
   title: "記録を残すのは常に必要です......"
-  description: ""
+  description: "私が敬重するのは、この世に満ちる果てしない苦しみである。私が敬重するのは、私が決して変えていない最初の思いである。"
   avatar: "/images/avatar.png"
   social:
     - name: "GitHub"

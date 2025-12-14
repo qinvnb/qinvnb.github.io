@@ -85,15 +85,15 @@ menus:
       params:
         icon: about
     - name: Contact
-      url: https://google.com
+      url: https://qinvnb.github.io/
       weight: 20
       params:
         icon: contact
-    - name: RSS Feed
-      url: /index.xml
-      weight: 30
-      params:
-        icon: rss
+    # - name: RSS Feed
+    #   url: /index.xml
+    #   weight: 30
+    #   params:
+    #     icon: rss
 
   # footer social link
   social:

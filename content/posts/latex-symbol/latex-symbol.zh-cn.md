@@ -1,18 +1,19 @@
 ---
 title: "LaTeX 常用符号大全"
-date: 2025-06-13
+date: 2025-06-13T10:00:00+08:00
 description: "LaTeX 常用符号大全，可用于查询。"
-draft: false  # 是否为草稿
-categories: ["工具", "LaTeX"]
+categories: ["工具"]
 tags: ["LaTeX"]
 slug: "latex-symbol"  #自定义 URL
+cover: '/images/posts/latex-symbol.png'
+
+draft: false  # 是否为草稿
 katex: true
 mermaid: true
 ---
 ## LaTeX 常用符号大全
 
 > 本文适合：LaTeX 初学者  
-> 内容深度：⭐⭐⭐⭐☆（含公式推导与实际应用场景）
 
 ---
 
@@ -20,7 +21,7 @@ mermaid: true
 
 在撰写学术论文、技术报告或数学笔记时，LaTeX 凭借其强大的数学排版能力，成为科研界的“标准语言”。然而，面对琳琅满目的符号，初学者常陷入“我想写那个符号，但不知道命令是什么”的困境。
 
-本篇将系统整理 **LaTeX 中最常用、最实用的数学与逻辑符号**，涵盖：希腊字母、运算符、集合符号、箭头、逻辑符号、特殊函数、分隔符、上下标、关系符等，并附上**真实使用场景与公式示例**，助你一文掌握 LaTeX 数学排版的核心。
+本文将系统整理 **LaTeX 中最常用、最实用的数学与逻辑符号**，帮助初学者快速掌握或查询。
 
 ---
 

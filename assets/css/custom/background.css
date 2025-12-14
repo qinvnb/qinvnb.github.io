@@ -109,8 +109,23 @@ article.prose td {
 }
 
 body {
-  background: url('/images/background.png') center/cover fixed no-repeat;
   min-height: 100vh;
+  transition: var(--bg-transition);
+  position: relative;
+  /* 确保body内容可滚动 */
+  overflow-x: hidden;
+}
+
+/* 使用伪元素创建固定背景 */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/images/background.png') center/cover no-repeat;
+  z-index: -1;
   transition: var(--bg-transition);
 }
 
@@ -127,6 +142,9 @@ article,
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), 0 4px 16px rgba(0, 0, 0, 0.08);
   padding: var(--bg-padding);
   transition: var(--bg-transition);
+  /* 确保内容在背景之上 */
+  position: relative;
+  z-index: 1;
 }
 
 article.prose,
@@ -134,8 +152,9 @@ article.prose,
   padding-inline: var(--bg-article-padding);
 }
 
-.dark {
-  background: url('/images/background.png') center/cover fixed no-repeat;
+/* 深色模式下只需修改伪元素背景 */
+.dark body::before {
+  background: url('/images/background.png') center/cover no-repeat;
 }
 
 .dark main,
@@ -155,8 +174,6 @@ article.prose,
     --bg-padding: 1.5rem;
     --bg-article-padding: 2rem;
   }
-
-  body { background-attachment: fixed; }
   
   main,
   .content,

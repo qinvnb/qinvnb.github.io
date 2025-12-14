@@ -20,17 +20,4 @@ links:
     description: "世界最大のコードホスティングプラットフォーム"
 ---
 
-## について
-
-Hugo Narrow は、Tailwind CSS 4.0 で構築されたモダンでクリーンなミニマルな Hugo テーマです。ブログ/ポートフォリオテーマとして設計されており、複数のカラースキーム、ダークモードサポート、レスポンシブデザインなど、広範なカスタマイズオプションを備えています。
-
-## 技術スタック
-
-- Hugo Extended
-- Tailwind CSS 4.0
-- @tailwindcss/typography
-- Glightbox
-- fjGallery
-- Macy.js
-- gumshoe
-- ...
+![夢の中の花の海](/images/about.png "作者：芩叶昔风")
