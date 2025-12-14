@@ -7,7 +7,7 @@ description: "LaTeX 常用符号大全，可用于查询。"
 draft: false  # 是否为草稿
 categories: ["工具", "LaTeX"]
 tags: ["LaTeX"]
-slug: "custom-url"  # 自定义 URL
+slug: "latex-symbol"  # 自定义 URL
 comments: true
 ---
 ## LaTeX 常用符号大全
