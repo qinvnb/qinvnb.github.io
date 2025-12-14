@@ -1,0 +1,35 @@
+# .github/workflows/deploy.yml
+name: Deploy Hugo to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]  # 只有 main 分支推送时触发
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true  # 👈 关键！必须拉取主题子模块
+          fetch-depth: 0    # 👈 拉取完整历史，便于 Hugo 生成 RSS 等
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "latest"   # 或指定版本，如 "0.120.0"
+          extended: true           # 如果用了 SCSS/PostCSS，选 true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages  # 默认部署到 gh-pages 分支
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
+          commit_message: "Deploy to GitHub Pages: ${GITHUB_SHA::7}"
