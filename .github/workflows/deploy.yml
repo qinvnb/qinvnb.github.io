@@ -18,8 +18,8 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "latest"   # 或指定版本，如 "0.120.0"
-          extended: true           # 如果用了 SCSS/PostCSS，选 true
+          hugo-version: "latest"   # 始终使用最新 Hugo Extended
+          extended: true
 
       - name: Build
         run: hugo --minify

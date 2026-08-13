@@ -19,4 +19,4 @@ links:
 
 ---
 
-![The Sea of Flowers in Dream](/images/about.png "Author: Merck Alkmooce")
+![The Sea of Flowers in Dream](/images/about.webp "Author: Merck Alkmooce")

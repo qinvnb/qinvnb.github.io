@@ -113,7 +113,7 @@ menus:
     #   params:
     #     icon: linkedin
     - name: Email
-      url: mailto:mocmmn@qq.com
+      url: mailto:qinvnb@gmail.com
       weight: 40
       params:
         icon: email
@@ -126,7 +126,7 @@ params:
   language: "zh-CN"
   shortName: "QINVNB"  # PWA
   images:
-  - "/images/avatar.png"
+  - "/images/avatar.webp"
 
 
   logo:
@@ -139,7 +139,7 @@ params:
     name: "QINVNB"
     title: "A Clean and Minimal Hugo Theme"
     description: "Focused on content and user experience."
-    avatar: "/images/avatar.png"
+    avatar: "/images/avatar.webp"
     social:
       - name: "GitHub"
         url: "https://github.com/qinvnb"
@@ -148,7 +148,7 @@ params:
       #   url: "https://twitter.com/username"
       #   icon: "twitter"
       - name: "Email"
-        url: "mailto:mocmmn@qq.com"
+        url: "mailto:qinvnb@gmail.com"
         icon: "email"
 
   # UI Components Control
@@ -276,21 +276,21 @@ params:
 
 
   analytics:
-    enabled: true
+    enabled: false
     baidu:
       enabled: false
-      id: "your-baidu-analytics-id"
+      id: ""
     clarity:
       enabled: false
-      id: "your-clarity-analytics-id"
+      id: ""
     google:
       enabled: false
-      id: "your-google-analytics-id"
-    umami: 
+      id: ""
+    umami:
       enabled: false
-      id: "your-umami-website-id"
-      src: "https://umami.com/myscript.js"
-      domains: "example.domain.com"
+      id: ""
+      src: ""
+      domains: ""
 
 
   katex:

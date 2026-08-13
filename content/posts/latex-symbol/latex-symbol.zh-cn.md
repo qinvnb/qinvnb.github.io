@@ -5,7 +5,7 @@ description: "LaTeX 常用符号大全，可用于查询。"
 categories: ["工具"]
 tags: ["LaTeX"]
 slug: "latex-symbol"  #自定义 URL
-cover: '/images/posts/latex-symbol.png'
+cover: "/images/posts/latex-symbol.webp"
 
 draft: false  # 是否为草稿
 katex: true

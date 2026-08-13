@@ -20,4 +20,4 @@ links:
     description: "世界最大のコードホスティングプラットフォーム"
 ---
 
-![夢の中の花の海](/images/about.png "作者：芩叶昔风")
+![夢の中の花の海](/images/about.webp "作者：芩叶昔风")
